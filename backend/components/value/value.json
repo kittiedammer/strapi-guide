@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_value_values",
+  "info": {
+    "name": "Value",
+    "icon": "burn",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "integer"
+    },
+    "min_price": {
+      "type": "integer"
+    },
+    "price_unit": {
+      "model": "price-units"
+    },
+    "text": {
+      "type": "string"
+    },
+    "tags_values": {
+      "collection": "tags-values"
+    },
+    "time": {
+      "type": "time"
+    },
+    "number": {
+      "type": "decimal"
+    },
+    "tags_with_value": {
+      "model": "tags-with-value"
+    },
+    "max_price": {
+      "type": "integer"
+    },
+    "rus_text": {
+      "type": "richtext"
+    },
+    "eng_text": {
+      "type": "richtext"
+    }
+  }
+}

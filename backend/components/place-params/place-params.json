@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_place_params_place_params",
+  "info": {
+    "name": "Place_params",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "richtext"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "important": {
+      "type": "richtext"
+    }
+  }
+}

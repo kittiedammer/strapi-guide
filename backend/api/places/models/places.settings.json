@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "Places",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_params": {
+      "type": "component",
+      "repeatable": false,
+      "component": "place-params.place-params"
+    },
+    "cuisines": {
+      "via": "places",
+      "collection": "cuisine",
+      "dominant": true
+    },
+    "tags": {
+      "via": "places",
+      "collection": "tags",
+      "dominant": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "duration": {
+      "type": "decimal"
+    },
+    "duration_unit": {
+      "model": "duration-units"
+    },
+    "is_partner": {
+      "type": "boolean"
+    },
+    "place_types": {
+      "collection": "place-types",
+      "via": "places",
+      "dominant": true
+    },
+    "stream": {
+      "type": "string"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phones"
+    },
+    "eng_params": {
+      "type": "component",
+      "repeatable": false,
+      "component": "place-params.place-params"
+    },
+    "coordinates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coordinates.coordinates"
+    },
+    "site": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phones"
+    },
+    "Open_time": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.days-of-week"
+    },
+    "entry_title": {
+      "type": "string"
+    },
+    "events": {
+      "via": "attractions",
+      "collection": "events"
+    },
+    "vr": {
+      "type": "string"
+    },
+    "tags_with_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "value.value"
+    }
+  }
+}

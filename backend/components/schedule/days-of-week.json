@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_schedule_days_of_weeks",
+  "info": {
+    "name": "Days_of_week",
+    "icon": "calendar-day",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Open_time": {
+      "type": "component",
+      "repeatable": true,
+      "component": "schedule.open-time"
+    },
+    "days_of_week": {
+      "model": "days-of-week"
+    }
+  }
+}

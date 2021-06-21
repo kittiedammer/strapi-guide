@@ -1,0 +1,138 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Events",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_params": {
+      "type": "component",
+      "repeatable": false,
+      "component": "place-params.place-params",
+      "pluginOptions": {}
+    },
+    "eng_params": {
+      "type": "component",
+      "repeatable": false,
+      "component": "place-params.place-params",
+      "pluginOptions": {}
+    },
+    "Coordinates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coordinates.coordinates",
+      "pluginOptions": {}
+    },
+    "map_line": {
+      "type": "json",
+      "pluginOptions": {}
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "events",
+      "dominant": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "start_day": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "start_time": {
+      "type": "time",
+      "pluginOptions": {}
+    },
+    "end_day": {
+      "type": "date",
+      "pluginOptions": {}
+    },
+    "end_time": {
+      "type": "time",
+      "pluginOptions": {}
+    },
+    "duration": {
+      "type": "decimal",
+      "pluginOptions": {}
+    },
+    "event_type": {
+      "model": "event-type"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phones",
+      "pluginOptions": {}
+    },
+    "emails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phones",
+      "pluginOptions": {}
+    },
+    "site": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.phones",
+      "pluginOptions": {}
+    },
+    "duration_unit": {
+      "model": "duration-units"
+    },
+    "age": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "entry_title": {
+      "type": "string"
+    },
+    "attractions": {
+      "via": "events",
+      "collection": "places",
+      "dominant": true
+    },
+    "days_of_weeks": {
+      "collection": "days-of-week"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "vr": {
+      "type": "string"
+    },
+    "rote_types": {
+      "via": "routes",
+      "collection": "rote-types",
+      "dominant": true
+    },
+    "recommendation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recommendations.recommendations"
+    },
+    "tags_with_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "value.value"
+    },
+    "price_unit": {
+      "model": "price-units"
+    }
+  }
+}

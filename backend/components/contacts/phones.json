@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_phones_phones",
+  "info": {
+    "name": "Contacts",
+    "icon": "phone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}

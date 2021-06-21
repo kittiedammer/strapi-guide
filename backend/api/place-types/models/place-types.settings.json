@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "place_types",
+  "info": {
+    "name": "Place_types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rus_name": {
+      "type": "string"
+    },
+    "eng_name": {
+      "type": "string"
+    },
+    "places": {
+      "via": "place_types",
+      "collection": "places"
+    }
+  }
+}
